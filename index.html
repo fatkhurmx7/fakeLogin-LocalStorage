@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="src/style.css">
+  <title>system login</title>
+</head>
+<body>
+  <div class="container">
+    <!-- -----------BAGIAN LOGIN------------ -->
+    <div id="login">
+      <h1>Login!</h1>
+      <div class="boxInput">
+        <input type="text" id="nameLogin" placeholder="username">
+        <input type="password" id="pwLogin" placeholder="password">
+      </div>
+      <div class="boxBottom">
+        <button id="btnLogin">LOGIN</button>
+        <p>Don't have an account? <a onClick="ahref()">Sign Up</a></p>
+      </div>
+    </div>
+    
+    <!-- ----------BAGIAN SIGN UP----------- -->
+    <div id="signUp">
+      <h1>SignUp!</h1>
+      <div class="boxInput">
+        <input type="text" id="nameSign" placeholder="username">
+        <input type="password" id="pwSign1" placeholder="password">
+        <input type="password" id="pwSign2" placeholder="password">
+      </div>
+      <div class="boxBottom">
+        <button id="btnSignUp">SIGNUP</button>
+        <p>Already have an account? <a onClick="ahref()">Sign In</a></p>
+      </div>
+    </div>
+    
+    <!-- ----------BAGIAN BLANK------------ -->
+    <div id="kosong">
+      <button onclick="out()">x</button>
+      <div>
+        <h2 id="kosongTeks"></h2>
+        <p>Anda berhasil login!</p>
+      </div>
+    </div>
+    
+  </div>
+  
+  <script src="src/script.js"></script>
+</body>
+</html>
